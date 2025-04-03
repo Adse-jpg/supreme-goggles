@@ -1,0 +1,132 @@
+body{
+    margin: auto;
+    background-color: antiquewhite;
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+}
+main{
+    min-height: calc(100vh - 250px - 100px);
+}
+header{
+    height: 250px;
+    background-color: #778000;
+    color: #fffff0;
+    width: 100%;
+    border-bottom: black solid 3px;
+    border-top: black solid 3px;
+}
+.hoofd{
+    height: 205px;
+    width: 205px;
+    background-image: url(../foto/tharde02.jpg);
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    border: #fffff0 solid 3px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+h1{
+    padding-top: 45%;
+    text-align: center;
+}
+.mid{
+    text-align: center;
+}
+.een{
+    background-color: #005830;
+    display: inline-block;
+    width: 100%;
+    border-bottom: black solid 3px;
+}
+/* Ik heb gekozen voor een groter mobile-first vanwege de afkapping in lange woorden,
+    in de kolom weetjes. */
+@media only screen and (min-width: 1050px){
+    [class*="een"]{
+        margin-bottom: 20px;
+        border: black solid 3px;
+    }
+}
+.twee{
+    background-color: #007a80;
+    display: inline-block;
+}
+@media only screen and (min-width: 1050px){
+    [class*="twee"]{
+        margin-left: 20px;
+        border: black solid 3px;
+        
+    }
+}
+[class*="col-"]{
+width: 100%;
+}
+@media only screen and (min-width: 1050px){
+[class*="col-"]{
+   float: left;
+   margin-top: 20px;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+}
+.border{
+   min-height: 300px;
+    border: #fffff0 solid 3px;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+.textcenter{
+    text-align: center;
+}
+li{
+    padding-left: 15px;
+    list-style-type: square ;
+}
+footer{
+    height: 100px;
+    width: 100%;
+    background-color: #778000;
+    text-align: center;
+    clear: both;
+    border-top: black solid 3px;
+}
+.foto{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    width: 25%;
+    height: auto;
+    border: #fffff0 solid 3px;
+    border-radius: 10px;
+    padding: 5px;
+}
+@media only screen and (min-width: 1050px){
+    [class*="mid"]{
+    text-align: left;
+}
+}
+@media only screen and (min-width: 1050px){
+    [class*="foto"]{
+    float:right;
+    border: #fffff0 solid 3px;
+    border-radius: 10px;
+    padding: 5px;
+    width: 15%;
+    margin-left: 10px;
+}
+}
